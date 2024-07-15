@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    margin: 3rem;
+}
+
+.accordion{
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.accordion .title{
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion .title .icon{
+    border: 2px solid #000;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion .title .icon img{
+    max-width: 12px;
+}
+
+.accordion p{
+    display: none;
+    font-size: 16px;
+    padding: 1.5rem;
+}
+
+.accordion.active p{
+    display:block;
+}
